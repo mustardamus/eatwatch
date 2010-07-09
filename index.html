@@ -15,19 +15,18 @@
   </head>
   <body>
     <div id="home">
-      <div class="toolbar">
-        <h1>Eat Watch</h1>
-      </div>
+      <div id="eatwatch" class="eatwatch-eat"></div>
       
-      <div id="eatwatch" class="eatwatch-donteat">
-        Don't Eat
-      </div>
-
       <ul class="edit rounded">
         <li id="calories-input">
           <input type="text" name="calories" id="calories" placeholder="123" />
           <label for="calories">kcal</label>
         </li>
+      </ul>
+      
+      <ul id="calories-submit" class="edit rounded">
+        <li class="arrow"><a href="#" class="eaten">Eaten</a></li>
+        <li class="arrow"><a href="#" class="burned">Burned</a></li>
       </ul>
     </div><!-- #home -->
     

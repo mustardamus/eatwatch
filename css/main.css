@@ -1,13 +1,6 @@
-#eatwatch {
-  font-size: 58px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 0 white;
-  padding: 20px 0 10px 0;
-}
-.eatwatch-eat { color: #4aad09; }
-.eatwatch-donteat { color: #ff403f; }
+#eatwatch { height: 24px; }
+.eatwatch-eat { background: #4aad09; }
+.eatwatch-donteat { background: #ff403f; }
 #calories-input { position: relative; }
 #calories-input input {
   font-size: 28px;
@@ -19,3 +12,9 @@
   top: 16px;
   left: 14px;
 }
+#calories-submit a {
+  font-size: 30px;
+  padding-left: 76px;
+}
+#calories-submit .eaten { background: url(../images/bomb.png) 10px 5px no-repeat; }
+#calories-submit .burned { background: url(../images/magic.png) 10px 5px no-repeat; }
