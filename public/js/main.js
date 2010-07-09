@@ -63,4 +63,14 @@ $(document).ready(function() {
     }
   }
   updateinfo();
+  
+  
+  
+  $('#reset a').click(function() {
+    if(confirm('Wirklich zurücksetzen?')) {
+      alert('reset');
+    }
+    
+    return false;
+  });
 });
