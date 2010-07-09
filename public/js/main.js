@@ -19,11 +19,8 @@ $(document).ready(function() {
 
       $.post('/add', { file: file, value: calories.val() }, function(data) {
         updateinfo();
-        
-        setTimeout(function() { //show minimal progress on fast server
-          el.removeClass('active');
-          calories.val('');
-        }, 1000);
+        el.removeClass('active');
+        calories.val('');
       });
     }
     
