@@ -1,4 +1,4 @@
-["rubygems", "sinatra"].each do |file|
+["rubygems", "sinatra", "erb"].each do |file|
   require file
 end
 
