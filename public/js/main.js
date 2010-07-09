@@ -56,7 +56,7 @@ $(document).ready(function() {
     
     if(sum < burngoal) {
       eatwatch.addClass('eatwatch-eat');
-      calories.attr('placeholder', (-+(sum-burngoal)) + ' noch zu essen');
+      calories.attr('placeholder', (-+(sum-burngoal)) + ' noch essen');
     } else {
       eatwatch.addClass('eatwatch-donteat');
       calories.attr('placeholder', (sum-burngoal) + ' zuviel');
