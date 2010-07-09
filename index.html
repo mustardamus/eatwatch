@@ -3,15 +3,70 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     
-    <title>Tutorial Title</title>
+    <title>Eat Watch</title>
     
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jqtouch.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jqtthemes/apple/theme.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jqtouch.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
   </head>
   <body>
+    <div id="home">
+      <div class="toolbar">
+        <h1>Eat Watch</h1>
+      </div>
+      
+      <div id="eatwatch" class="eatwatch-donteat">
+        Don't Eat
+      </div>
+
+      <ul class="edit rounded">
+        <li id="calories-input">
+          <input type="text" name="calories" id="calories" placeholder="123" />
+          <label for="calories">kcal</label>
+        </li>
+      </ul>
+    </div><!-- #home -->
     
+    <!--<div id="home">
+    	<div class="toolbar">
+    	  <h1>Eat Watch</h1>
+    	</div>
+    	
+    	<div class="info">
+    	 This is a info field :)
+    	</div>
+    	
+    	<ul class="rounded">
+    	  <li class="arrow"><a href="#forms">Show some forms</a></li>
+          <li><a href="#pageevents">Page events</a></li>
+          <li id="swipeme">Swipe me!</li>
+          <li id="orient">Orientation: <strong>profile</strong></li>
+      </ul>
+    </div>
+    
+    <div id="forms">
+      <div class="toolbar">
+        <h1>Heyhey</h1>
+        <a href="#" class="back">Back</a>
+      </div>
+      
+      <form>
+        <ul class="edit rounded">
+          <li><input type="text" placeholder="kcal" /></li>
+        </ul>
+        <ul class="rounded">
+          <li><textarea placeholder="Comments here..."></textarea></li>
+        </ul>
+        <ul class="rounded">
+          <li><input type="checkbox" title="Checkbox anybody?" /></li>
+        </ul>
+        
+        <a href="#" class="submit grayButton">Ajax Submit</a>
+      </form>
+    </div>-->
   </body>
 </html>
