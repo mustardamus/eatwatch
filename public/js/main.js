@@ -24,10 +24,24 @@ $(document).ready(function() {
   
   
   var info = $('#info');
+  var infoEaten = $('.eaten p', info);
+  var infoBurned = $('.burned p', info);
+  
+  function loadnum(url, el) {
+    $.ajax({
+      url: url,
+      async: false,
+      success: function(data) {
+        el.text(data);
+      }
+    });
+  }
   
   function updateinfo() {
-    $('.eaten p', info).load('/eaten');
-    $('.burned p', info).load('/burned');
+    loadnum('/eaten', infoEaten);
+    loadnum('/burned', infoBurned);
+    
+    $('.sum p', info).text(parseInt(infoEaten.text()) - (2300 + parseInt(infoBurned.text())));
   }
   updateinfo();
 });
