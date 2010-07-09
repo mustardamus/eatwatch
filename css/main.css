@@ -13,3 +13,18 @@
   left: 14px;
 }
 #calories-submit a { font-size: 30px; }
+#info { background: #dddddd; }
+#info li {
+  border-top: 1px solid #eeeeee;
+  position: relative;
+}
+#info li h3 { font-size: 14px; }
+#info li p {
+  text-align: right;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  color: #333333;
+  text-shadow: 1px 1px 0 white;
+}
+#info li:first-child { border: 0; }
