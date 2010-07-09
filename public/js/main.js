@@ -54,10 +54,12 @@ $(document).ready(function() {
     $('.sum p', info).text(sum);
     eatwatch.removeClass();
     
-    if(sum <= burngoal) {
+    if(sum < burngoal) {
       eatwatch.addClass('eatwatch-eat');
+      calories.attr('placeholder', (-+(sum-burngoal)) + ' noch zu essen');
     } else {
       eatwatch.addClass('eatwatch-donteat');
+      calories.attr('placeholder', (sum-burngoal) + ' zuviel');
     }
   }
   updateinfo();
