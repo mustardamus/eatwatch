@@ -68,7 +68,9 @@ $(document).ready(function() {
   
   $('#reset a').click(function() {
     if(confirm('Wirklich zurücksetzen?')) {
-      alert('reset');
+      $.post('/reset', function(data) {
+        updateinfo();
+      });
     }
     
     return false;

@@ -14,6 +14,14 @@ post "/add" do
   addnumber(params[:file], params[:value])
 end
 
+post "/reset" do
+  ["counters/eaten.txt", "counters/burned.txt"].each do |file|
+    fp = File.open(file, 'w')
+    fp.write("0")
+    fp.close
+  end
+end
+
 private
 
 def numeric?(object)
