@@ -12,9 +12,4 @@
   top: 16px;
   left: 14px;
 }
-#calories-submit a {
-  font-size: 30px;
-  padding-left: 76px;
-}
-#calories-submit .eaten { background: url(../images/bomb.png) 10px 5px no-repeat; }
-#calories-submit .burned { background: url(../images/magic.png) 10px 5px no-repeat; }
+#calories-submit a { font-size: 30px; }
