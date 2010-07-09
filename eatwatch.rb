@@ -34,8 +34,5 @@ def addnumber(file, value)
     file = File.open(file, 'w')
     file.write(current + value.to_i)
     file.close
-    "success"
-  else
-    "error"
   end
 end
