@@ -1,4 +1,12 @@
+var bodyburn = 2300;
+var burngoal = -1024;
+
 $(document).ready(function() {
+  var eatwatch = $('<div/>', {
+    id: 'eatwatch'
+  }).prependTo('#home');
+  
+  
   $.jQTouch(); //http://stackoverflow.com/questions/2543397/how-to-load-jqtouch-on-demand to get it to work
   
   
@@ -41,7 +49,16 @@ $(document).ready(function() {
     loadnum('/eaten', infoEaten);
     loadnum('/burned', infoBurned);
     
-    $('.sum p', info).text(parseInt(infoEaten.text()) - (2300 + parseInt(infoBurned.text())));
+    var sum = parseInt(infoEaten.text()) - (bodyburn + parseInt(infoBurned.text()));
+    
+    $('.sum p', info).text(sum);
+    eatwatch.removeClass();
+    
+    if(sum <= burngoal) {
+      eatwatch.addClass('eatwatch-eat');
+    } else {
+      eatwatch.addClass('eatwatch-donteat');
+    }
   }
   updateinfo();
 });
